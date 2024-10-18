@@ -1,11 +1,11 @@
 import React from "react";
+import SvgIcon from "./common/SvgIcon.tsx";
 import {
     Box, Button,
-    ButtonGroup,
     Card,
     CardBody,
     CardFooter,
-    Divider,
+    Divider, Flex,
     Heading, Image, SimpleGrid,
     Stack,
     Text
@@ -23,27 +23,27 @@ export const OurApps: React.FC = () => {
                             borderRadius='lg'
                         />
                         <Stack mt='6' spacing='3'>
-                            <Heading size='md'>Living room Sofa</Heading>
+                            <Heading size='md'>Game ones</Heading>
                             <Text>
-                                This sofa is perfect for modern tropical spaces, baroque inspired
-                                spaces, earthy toned spaces and for people who love a chic design with a
-                                sprinkle of vintage design.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.
                             </Text>
                             <Text color='blue.600' fontSize='2xl'>
-                                $450
+                                FREE
                             </Text>
                         </Stack>
                     </CardBody>
                     <Divider />
-                    <CardFooter>
-                        <ButtonGroup spacing='2'>
-                            <Button variant='solid' colorScheme='blue'>
-                                Buy now
+                    <CardFooter flex={2} justifyContent="center">
+                        <Flex align="center">
+                            <Button ml={3}>
+                                <SvgIcon name="GooglePlay" size={20} />
+                                <Text fontWeight="bold" ml={3}>Play now</Text>
                             </Button>
-                            <Button variant='ghost' colorScheme='blue'>
-                                Add to cart
-                            </Button>
-                        </ButtonGroup>
+                        </Flex>
                     </CardFooter>
                 </Card>
                 <Card maxW='sm'>
@@ -54,27 +54,27 @@ export const OurApps: React.FC = () => {
                             borderRadius='lg'
                         />
                         <Stack mt='6' spacing='3'>
-                            <Heading size='md'>Living room Sofa</Heading>
+                            <Heading size='md'>Game two</Heading>
                             <Text>
-                                This sofa is perfect for modern tropical spaces, baroque inspired
-                                spaces, earthy toned spaces and for people who love a chic design with a
-                                sprinkle of vintage design.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.
                             </Text>
                             <Text color='blue.600' fontSize='2xl'>
-                                $450
+                                FREE
                             </Text>
                         </Stack>
                     </CardBody>
                     <Divider />
-                    <CardFooter>
-                        <ButtonGroup spacing='2'>
-                            <Button variant='solid' colorScheme='blue'>
-                                Buy now
+                    <CardFooter flex={2} justifyContent="center">
+                        <Flex align="center">
+                            <Button ml={3}>
+                                <SvgIcon name="GooglePlay" size={20} />
+                                <Text fontWeight="bold" ml={3}>Play now</Text>
                             </Button>
-                            <Button variant='ghost' colorScheme='blue'>
-                                Add to cart
-                            </Button>
-                        </ButtonGroup>
+                        </Flex>
                     </CardFooter>
                 </Card>
                 <Card maxW='sm'>
@@ -85,27 +85,27 @@ export const OurApps: React.FC = () => {
                             borderRadius='lg'
                         />
                         <Stack mt='6' spacing='3'>
-                            <Heading size='md'>Living room Sofa</Heading>
+                            <Heading size='md'>Game three</Heading>
                             <Text>
-                                This sofa is perfect for modern tropical spaces, baroque inspired
-                                spaces, earthy toned spaces and for people who love a chic design with a
-                                sprinkle of vintage design.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.
                             </Text>
                             <Text color='blue.600' fontSize='2xl'>
-                                $450
+                                FREE
                             </Text>
                         </Stack>
                     </CardBody>
                     <Divider />
-                    <CardFooter>
-                        <ButtonGroup spacing='2'>
-                            <Button variant='solid' colorScheme='blue'>
-                                Buy now
+                    <CardFooter flex={2} justifyContent="center">
+                        <Flex align="center">
+                            <Button ml={3}>
+                                <SvgIcon name="GooglePlay" size={20} />
+                                <Text fontWeight="bold" ml={3}>Play now</Text>
                             </Button>
-                            <Button variant='ghost' colorScheme='blue'>
-                                Add to cart
-                            </Button>
-                        </ButtonGroup>
+                        </Flex>
                     </CardFooter>
                 </Card>
             </SimpleGrid>
