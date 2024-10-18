@@ -8,7 +8,7 @@ const HelloMessage: React.FC = () => {
     return (
         <Box>
             <Box
-                bg='tomato'
+                backgroundImage={'https://singleplayer.org/wp-content/uploads/2024/02/photomode_18112021_021451.png'}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
