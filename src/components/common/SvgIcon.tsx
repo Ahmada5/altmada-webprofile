@@ -11,14 +11,15 @@ const loadIcon = (iconName: string) => {
 
 interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
     name: string;
+    size?: string | number;  // Add size prop
 }
 
-const SvgIcon = ({ name, ...props }: SvgIconProps) => {
+const SvgIcon = ({ name, size = 24, ...props }: SvgIconProps) => {
     const IconComponent = loadIcon(name);
 
     return (
         <Suspense fallback={<div>Loading icon...</div>}>
-            <IconComponent {...props} />
+            <IconComponent width={size} height={size} {...props} />
         </Suspense>
     );
 };
