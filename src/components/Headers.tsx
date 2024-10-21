@@ -11,9 +11,8 @@ interface HeadersProps {
 }
 
 export const Headers: React.FC<HeadersProps> = ({
-                                                    cameraPosition = [0, 0, 5],
+                                                    cameraPosition = [0, 9, 5],
                                                     canvasBackground = '#ff00ff00',
-                                                    objectSize = [1, 1, 1],
                                                     canvasSize = [1090, 800],
                                                 }) => {
     return (
@@ -26,13 +25,9 @@ export const Headers: React.FC<HeadersProps> = ({
         >
             <PerspectiveCamera makeDefault position={cameraPosition}/>
             <OrbitControls/>
-            <ambientLight intensity={0.5}/>
+            <ambientLight intensity={0.3}/>
             <directionalLight position={[10, 10, 5]} intensity={1}/>
-            <mesh>
-                <boxGeometry args={objectSize}/>
-                <meshNormalMaterial/>
-            </mesh>
-            <Earth/>
+            <Earth rotation={[0, 0, 0]}/>
         </Canvas>
     );
 };
