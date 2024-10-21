@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { PerspectiveCamera } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Earth from '../components/models/Earth';
 
 interface HeadersProps {
@@ -52,7 +51,7 @@ export const Headers: React.FC<HeadersProps> = ({
             <OrbitControls/>
             <ambientLight intensity={0.3}/>
             <directionalLight position={[10, 10, 5]} intensity={1}/>
-            <Earth rotation={[0, 0, 0]}/>
+            <Earth rotation={[0, 0, count]}/>
         </Canvas>
     );
 };
