@@ -1,6 +1,7 @@
-import {Canvas} from '@react-three/fiber';
-import {OrbitControls} from '@react-three/drei';
-import {PerspectiveCamera} from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import { PerspectiveCamera } from '@react-three/drei';
+import Earth from '../components/models/Earth';
 
 interface HeadersProps {
     cameraPosition?: [number, number, number];
@@ -25,11 +26,13 @@ export const Headers: React.FC<HeadersProps> = ({
         >
             <PerspectiveCamera makeDefault position={cameraPosition}/>
             <OrbitControls/>
-
+            <ambientLight intensity={0.5}/>
+            <directionalLight position={[10, 10, 5]} intensity={1}/>
             <mesh>
                 <boxGeometry args={objectSize}/>
                 <meshNormalMaterial/>
             </mesh>
+            <Earth/>
         </Canvas>
     );
 };
