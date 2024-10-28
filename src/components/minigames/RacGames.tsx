@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
-
-// Main rectangle character
-const Rectangle: React.FC<{ x: number; y: number; width: number; height: number }> = ({ x, y, width, height }) => {
-    return <rect x={x} y={y} width={width} height={height} fill="orange" />;
-};
+import MainCharacter from "./GamesComponents.tsx";
 
 // Game logic with gravity and jumping
 const Game: React.FC = () => {
@@ -56,7 +52,7 @@ const Game: React.FC = () => {
 
     return (
         <svg width="300" height="300" style={{ border: '1px solid black' }}>
-            <Rectangle x={position.x} y={position.y} width={rectangleSize.width} height={rectangleSize.height} />
+            <MainCharacter positionX={position.x} positionY={position.y} widthObject={rectangleSize.width} heightObject={rectangleSize.height}/>
         </svg>
     );
 };
